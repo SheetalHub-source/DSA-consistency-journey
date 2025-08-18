@@ -12,4 +12,4 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Time Complexity:** O(n²)  
 - **Space Complexity:** O(1)  
 - **Best Use:** Small datasets where simplicity matters more than efficiency.  
-- **Code:** [SelectionSort.java](./SelectionSort.java)[SelectionSortUsingGeneric.java](/SelectionSortUsingGeneric.java)
+- **Code:** [SelectionSort.java](./SelectionSort.java), [SelectionSortUsingGeneric.java](./SelectionSortUsingGeneric.java)

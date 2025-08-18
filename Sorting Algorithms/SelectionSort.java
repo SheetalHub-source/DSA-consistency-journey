@@ -22,9 +22,7 @@ class SelectionSort {
 
     public static void swap(int[] arr, int min_idx, int i) {
         if (min_idx != i) {
-            // arr[min_idx] = arr[min_idx] + arr[i];
-            // arr[i] = arr[min_idx] - arr[i];
-            // arr[min_idx] = arr[min_idx] - arr[i];
+            // XOR Swap
             arr[min_idx] = arr[min_idx] ^ arr[i];
             arr[i] = arr[min_idx] ^ arr[i];
             arr[min_idx] = arr[min_idx] ^ arr[i];
@@ -36,22 +34,19 @@ class SelectionSort {
         System.out.println("Enter the length of the array:");
         int n = Integer.parseInt(bufferedReader.readLine());
         int arr[] = new int[n];
+        
         for (int i = 0; i < n; i++) {
-            System.out.println("Enter the value of arr[" + i + "]");
+            System.out.println("Enter the value of arr[" + i + "]:");
             arr[i] = Integer.parseInt(bufferedReader.readLine());
         }
-        System.out.println("Before Sorting Array looks like this");
-        // for(int i:arr){
-        // System.out.print(i+" ");
-        // }
-        Arrays.stream(arr).forEach(x -> System.out.println(x + " "));
-        System.out.println();
-        SelectionSort_For_Array(arr);
-        System.out.println("Sorted Array looks like this");
-        Arrays.stream(arr).forEach(x -> System.out.println(x + " "));
 
-        // for(int i:arr){
-        // System.out.print(i+" ");
-        // }
+        System.out.println("Before Sorting, Array looks like this:");
+        Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
+        System.out.println();
+
+        SelectionSort_For_Array(arr);
+
+        System.out.println("Sorted Array looks like this:");
+        Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
     }
 }
