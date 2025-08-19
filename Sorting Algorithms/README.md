@@ -13,3 +13,10 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Space Complexity:** O(1)  
 - **Best Use:** Small datasets where simplicity matters more than efficiency.  
 - **Code:** [SelectionSort.java](./SelectionSort.java), [SelectionSortUsingGeneric.java](./SelectionSortUsingGeneric.java)
+
+### 🔹 2. Bubble Sort
+- **Idea:** Repeatedly compares adjacent elements and swaps them if they are in the wrong order.  
+- **Time Complexity:** O(n²) (Best Case: O(n) if optimized with a swap flag)  
+- **Space Complexity:** O(1)  
+- **Best Use:** Educational purposes and very small datasets; rarely used in production due to inefficiency.  
+- **Code:** [BubbleSort.java](./BubbleSort.java)
