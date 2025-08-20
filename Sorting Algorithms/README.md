@@ -20,3 +20,10 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Space Complexity:** O(1)  
 - **Best Use:** Educational purposes and very small datasets; rarely used in production due to inefficiency.  
 - **Code:** [BubbleSort.java](./BubbleSort.java)
+
+### 🔹 3. Insertion Sort
+- **Idea:** Builds the sorted array one element at a time by inserting each element into its correct position.
+- **Time Complexity:** O(n²) (Best Case: O(n) when already sorted)
+- **Space Complexity:** O(1)
+- **Best Use:** Small or nearly sorted datasets; useful for online/incremental sorting.
+- **Code:** [InsertionSort.java](./InsertionSort.java)
