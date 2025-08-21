@@ -27,3 +27,15 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Space Complexity:** O(1)
 - **Best Use:** Small or nearly sorted datasets; useful for online/incremental sorting.
 - **Code:** [InsertionSort.java](./InsertionSort.java)
+
+### 🔹 4. Merge Sort
+- **Idea:** A **divide-and-conquer** algorithm that splits the array into halves, recursively sorts them, and then merges the sorted halves.  
+- **Time Complexity:**  
+  - Best Case: O(n log n)  
+  - Average Case: O(n log n)  
+  - Worst Case: O(n log n)  
+- **Space Complexity:** O(n) (extra space needed for temporary arrays during merging)  
+- **Best Use:** Large datasets where stable sorting and guaranteed O(n log n) performance is required. Commonly used in external sorting (e.g., sorting data from disk).  
+- **Code:** [MergeSort.java](./MergeSort.java)  
+
+---
