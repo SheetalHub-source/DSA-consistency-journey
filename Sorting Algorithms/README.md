@@ -39,3 +39,23 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Code:** [MergeSort.java](./MergeSort.java)  
 
 ---
+### 🔹 5. Quick Sort
+- **Idea:** A **divide-and-conquer** algorithm that:
+  1. Selects a **pivot** element.  
+  2. Partitions the array into two parts – elements **smaller than pivot** on the left, **greater than pivot** on the right.  
+  3. Recursively applies the same process to each partition.  
+
+- **Time Complexity:**  
+  - Best Case: **O(n log n)** (when partitions are balanced)  
+  - Average Case: **O(n log n)**  
+  - Worst Case: **O(n²)** (when the pivot selection is poor, e.g., always smallest/largest element)  
+
+- **Space Complexity:**  
+  - **O(log n)** (for recursion stack in average case)  
+  - **O(n)** in the worst case  
+
+- **Best Use:**  
+  - General-purpose sorting where average-case performance is more important than worst-case guarantees.  
+  - Commonly used in **standard library sort implementations** (with optimizations like randomized pivot or hybrid approaches).  
+
+- **Code:** [QuickSort.java](./QuickSort.java)  
