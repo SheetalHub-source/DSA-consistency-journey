@@ -59,3 +59,20 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
   - Commonly used in **standard library sort implementations** (with optimizations like randomized pivot or hybrid approaches).  
 
 - **Code:** [QuickSort.java](./QuickSort.java)  
+### 🔹 6. Counting Sort
+- **Idea:**  
+  - Works for **non-negative integers**.  
+  - Counts the frequency of each element and reconstructs the sorted array based on counts.  
+- **Time Complexity:**  
+  - Best Case: **O(n + k)**  
+  - Average Case: **O(n + k)**  
+  - Worst Case: **O(n + k)**  
+  *(where `n` is number of elements and `k` is the maximum element value)*  
+- **Space Complexity:** O(k) (extra array used for counts)  
+- **Best Use:**  
+  - When the range of input values (`k`) is not much larger than the number of elements (`n`).  
+  - Useful in scenarios like sorting grades, counting objects, or preprocessing for radix sort.  
+- **Limitations:** Not suitable for sorting negative numbers directly or very large ranges.  
+- **Code:** [CountSort.java](./CountSort.java)  
+
+---
