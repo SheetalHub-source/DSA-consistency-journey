@@ -76,3 +76,34 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Code:** [CountSort.java](./CountSort.java)  
 
 ---
+### 🔹 7. Stable Counting Sort
+- **Idea:**  
+  - A **non-comparison based sorting algorithm**.  
+  - Counts the frequency of each element and uses this information to place elements directly into their correct position.  
+  - Can be made **stable** by placing elements into the output array from **right to left**, preserving the order of equal elements.  
+
+- **Time Complexity:**  
+  - Best Case: **O(n + k)**  
+  - Average Case: **O(n + k)**  
+  - Worst Case: **O(n + k)**  
+  *(where `n` is number of elements and `k` is the range of input values: `max - min + 1`)*  
+
+- **Space Complexity:**  
+  - **O(n + k)** (output array + frequency array)  
+
+- **Stability:**  
+  - Yes ✅ (if implemented carefully by iterating from right to left when filling the output array).  
+  - Stability makes it useful as a subroutine in **Radix Sort**.  
+
+- **Best Use:**  
+  - When the range of input values (`k`) is not much larger than the number of elements (`n`).  
+  - Useful for scenarios like:
+    - Sorting exam scores (0–100).  
+    - Sorting small integers.  
+    - As a building block for **Radix Sort**.  
+
+- **Limitations:**  
+  - Not suitable if the input range (`k`) is **very large** compared to `n`.  
+  - Extra space requirement can be expensive for large ranges.  
+
+- **Code:** [CountingSortStable.java](./CountingSortStable.java)  
