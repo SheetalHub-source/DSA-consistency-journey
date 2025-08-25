@@ -107,3 +107,12 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
   - Extra space requirement can be expensive for large ranges.  
 
 - **Code:** [CountingSortStable.java](./CountingSortStable.java)  
+
+## 🔹 Radix Sort  
+
+- **Idea:** Sorts numbers digit by digit starting from the least significant digit (LSD) to the most significant digit (MSD), using a stable sorting algorithm (like Counting Sort) at each digit.  
+- **Time Complexity:** O(d·(n + k))  
+- **Space Complexity:** O(n + k)  
+- **Stable:** ✅ Yes  
+- **In-place:** ❌ No  
+- **Use Cases:** Efficient for sorting integers, phone numbers, ZIP codes, and other digit-based data when the number of digits is not very large.  
