@@ -116,3 +116,33 @@ Each algorithm is implemented from scratch with notes on **time complexity, spac
 - **Stable:** ✅ Yes  
 - **In-place:** ❌ No  
 - **Use Cases:** Efficient for sorting integers, phone numbers, ZIP codes, and other digit-based data when the number of digits is not very large.  
+### 🔹 8. Bucket Sort
+- **Idea:**  
+  - A **distribution sort** algorithm.  
+  - Divides the input into several buckets, distributes elements into these buckets, sorts each bucket individually (using insertion sort or another algorithm), and then concatenates them.  
+  - Works best when input values are **uniformly distributed**.  
+
+- **Time Complexity:**  
+  - Best Case: **O(n + k)** (when elements are uniformly spread and each bucket has few elements)  
+  - Average Case: **O(n + n log(n/k))**  
+  - Worst Case: **O(n²)** (when all elements fall into one bucket and that bucket is sorted with a comparison-based sort)  
+
+- **Space Complexity:**  
+  - **O(n + k)** (extra space for buckets)  
+
+- **Stability:**  
+  - Depends on the sorting algorithm used inside each bucket.  
+  - If a stable sort (like Insertion Sort) is used, then Bucket Sort can be stable.  
+
+- **Best Use:**  
+  - Sorting **floating-point numbers** in range [0, 1).  
+  - When input is **uniformly distributed** across a known range.  
+  - Useful in scenarios like:  
+    - Sorting percentages/probabilities.  
+    - Sorting decimal values between 0 and 1.  
+
+- **Limitations:**  
+  - Not efficient if input data is highly skewed (many elements fall in the same bucket).  
+  - Requires knowledge of the input distribution for good performance.  
+
+- **Code:** [BucketSort.java](./BucketSort.java)  
