@@ -36,3 +36,14 @@ Output: true
 Input:  arr = [90, 80, 100, 70, 40, 30]  
 Output: false
 - **Problem Link:**   https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1
+
+### 🔹 4. Remove Duplicates from Sorted Array
+**Idea:** Traverse the sorted array using two pointers. Keep one pointer (j) to store the position of the next unique element, and another pointer (i) to iterate through the array. Whenever a new unique element is found, place it at nums[j] and increase the count.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Example:**  
+Input:
+arr = [1, 1, 1, 3, 3, 3, 3, 3, 3, 4, 4, 5] 
+Output: Count = 4
+Distinct elements are: 1 3 4 5
+- **Problem Link:**   https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
