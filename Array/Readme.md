@@ -106,3 +106,57 @@ Each problem is implemented from scratch with:
   Input: `arr = [1, 2, 0, 7, 4, 0, 5, 0, 3, 0]`  
   Output: `[1, 2, 7, 4, 5, 3, 0, 0, 0, 0]`
 - **Problem Link:**: https://leetcode.com/problems/move-zeroes/
+...existing code...
+
+### 8️⃣ Linear Search in an Array
+
+- **Idea:**  
+  Traverse the array from start to end, comparing each element with the target value. Return the index if found, otherwise return -1.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Searching for an element in an unsorted array.
+- **Example:**  
+  Input: `arr = [3, 5, 2, 4, 9]`, target = `4`  
+  Output: Element found at index = `3`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1)
+
+### 9️⃣ Union of Two Sorted Arrays
+
+- **Idea:**  
+  Use two pointers to traverse both sorted arrays. Compare elements and add the smaller one to the result if it is not a duplicate. Continue until both arrays are fully traversed, ensuring only unique elements are added.
+- **Time Complexity:** O(n + m)  
+  (where n and m are the lengths of the two arrays)
+- **Space Complexity:** O(n + m)  
+  (for storing the union)
+- **Best Use:** Efficiently find the union of two sorted arrays, removing duplicates.
+- **Example:**  
+  Input:  
+  `a = [1, 1, 1, 1, 1]`  
+  `b = [2, 2, 2, 2, 2]`  
+  Output: `[1, 2]`
+- **Problem:https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+
+### 🔟 Find the Missing Number in an Array
+
+- **Idea:**  
+  Calculate the expected sum of numbers from `0` to `n` using the formula `n*(n+1)/2`. Subtract the actual sum of the array from the expected sum to get the missing number.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the missing number in an array containing numbers from `0` to `n` with one missing.
+- **Example:**  
+  Input: `arr = [3, 0, 1]`  
+  Output: The missing number is `2`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/missing-number/)
+...existing code...
+
+### 1️⃣1️⃣ Maximum Consecutive Ones in a Binary Array
+
+- **Idea:**  
+  Traverse the array, counting consecutive 1s. Reset the count when a 0 is encountered and keep track of the maximum count found.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the longest sequence of consecutive 1s in a binary array.
+- **Example:**  
+  Input: `arr = [1, 1, 0, 1, 1, 1]`  
+  Output: The maximum number of consecutive 1s is `3`
+- **Problem Link:**: https://leetcode.com/problems/max-consecutive-ones/
