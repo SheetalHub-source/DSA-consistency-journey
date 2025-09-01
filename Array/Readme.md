@@ -157,6 +157,21 @@ Each problem is implemented from scratch with:
 - **Space Complexity:** O(1)
 - **Best Use:** Find the longest sequence of consecutive 1s in a binary array.
 - **Example:**  
+
   Input: `arr = [1, 1, 0, 1, 1, 1]`  
   Output: The maximum number of consecutive 1s is `3`
-- **Problem Link:**: https://leetcode.com/problems/max-consecutive-ones/
+- **Problem Link:**: https://leetcode.com/problems/max-consecutive-ones/ 
+
+...existing code...
+
+### 1️⃣2️⃣ Find the Single Number (Element Appearing Once)
+
+- **Idea:**  
+  Use XOR operation to find the element that appears only once in an array where every other element appears twice. XORing all elements cancels out the duplicates, leaving the unique element.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the single non-duplicate element in an array of pairs.
+- **Example:**  
+  Input: `arr = [4, 1, 2, 1, 2]`  
+  Output: The single number is `4`
+- **Problem Link:** https://leetcode.com/problems/single-number/
