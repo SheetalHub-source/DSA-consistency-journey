@@ -175,3 +175,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [4, 1, 2, 1, 2]`  
   Output: The single number is `4`
 - **Problem Link:** https://leetcode.com/problems/single-number/
+
+### 1️⃣3️⃣ Longest Subarray with Sum K
+
+- **Idea:**  
+  Use a HashMap to store prefix sums and their earliest indices. For each element, calculate the prefix sum and check if `(prefix sum - k)` exists in the map. If it does, update the result with the length of the subarray. This efficiently finds the longest subarray with sum equal to `k`.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for the HashMap)
+- **Best Use:** Find the longest subarray with a given sum in linear time.
+- **Example:**  
+  Input: `arr = [1, 2, 3, 2, 5]`, `k = 5`  
+  Output: Longest subarray length with sum `5` is `2`
+- **Problem Link:**https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
