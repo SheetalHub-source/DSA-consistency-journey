@@ -187,3 +187,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [1, 2, 3, 2, 5]`, `k = 5`  
   Output: Longest subarray length with sum `5` is `2`
 - **Problem Link:**https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+### 1️⃣4️⃣ Two Sum Problem
+
+- **Idea:**  
+  Use a HashMap to store each number and its index as you iterate through the array. For each element, check if the complement (`target - current number`) exists in the map. If found, return the indices of the two numbers.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for the HashMap)
+- **Best Use:** Find two numbers in an array that add up to a specific target efficiently.
+- **Example:**  
+  Input: `arr = [2, 7, 11, 15]`, `target = 9`  
+  Output: Indices `[1, 0]` (since `arr[1] + arr[0] = 7 + 2 = 9`)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/two-sum/)
