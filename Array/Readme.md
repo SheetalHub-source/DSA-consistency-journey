@@ -199,3 +199,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [2, 7, 11, 15]`, `target = 9`  
   Output: Indices `[1, 0]` (since `arr[1] + arr[0] = 7 + 2 = 9`)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/two-sum/)
+
+### 1️⃣5️⃣ Sort Colors (Dutch National Flag Problem)
+
+- **Idea:**  
+  Use three pointers to partition the array into three sections: 0s, 1s, and 2s. Swap elements to their correct positions as you traverse the array, ensuring all 0s are at the start, 2s at the end, and 1s in the middle.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1) (in-place sorting)
+- **Best Use:** Efficiently sort an array containing only 0s, 1s, and 2s.
+- **Example:**  
+  Input: `arr = [1, 2, 0, 0, 1, 2, 1, 2]`  
+  Output: `[0, 0, 1, 1, 1, 2, 2, 2]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/sort-colors/)
