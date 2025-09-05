@@ -22,7 +22,7 @@ public class SortColors {
         }
     }
     public static void main(String[] args) {
-        int arr[]={1,2,0,0,1,2,1,2};
+        int arr[]={2,0,0,1,2,0,2,2,1,0,1,0};
         sortColors(arr);
         for(int i:arr){
             System.out.print(i+" ");

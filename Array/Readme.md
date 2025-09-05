@@ -211,3 +211,26 @@ Each problem is implemented from scratch with:
   Input: `arr = [1, 2, 0, 0, 1, 2, 1, 2]`  
   Output: `[0, 0, 1, 1, 1, 2, 2, 2]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/sort-colors/)
+### 1️⃣6️⃣ Majority Element in an Array
+
+- **Idea:**  
+  Sort the array and return the middle element. In an array where a majority element appears more than ⌊n/2⌋ times, the middle element after sorting will always be the majority.
+- **Time Complexity:** O(n log n) (due to sorting)
+- **Space Complexity:** O(1) (if sorting in-place)
+- **Best Use:** Find the element that appears more than half the time in an array.
+- **Example:**  
+  Input: `arr = [3, 2, 3]`  
+  Output: `3`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/majority-element/)
+
+### 1️⃣7️⃣ Maximum Subarray Sum (Kadane's Algorithm)
+
+- **Idea:**  
+  Use Kadane's Algorithm to find the maximum sum of a contiguous subarray. Iterate through the array, maintaining the current sum and updating the maximum sum found. Reset the current sum to zero if it becomes negative.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the largest sum of any contiguous subarray.
+- **Example:**  
+  Input: `arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]`  
+  Output: Maximum subarray sum is `6`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-subarray/)
