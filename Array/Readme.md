@@ -234,3 +234,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]`  
   Output: Maximum subarray sum is `6`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-subarray/)
+### 1️⃣8️⃣ Print Subarray with Maximum Subarray Sum
+
+- **Idea:**  
+  Use an enhanced version of Kadane's Algorithm to track the start and end indices of the subarray that gives the maximum sum. Update these indices whenever a new maximum is found, and print the subarray.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find and print the actual subarray that produces the maximum sum, not just the sum itself.
+- **Example:**  
+  Input: `arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]`  
+  Output:  
+  Subarray: `4 -1 2 1`  
+  The maximum subarray sum is `6` 
