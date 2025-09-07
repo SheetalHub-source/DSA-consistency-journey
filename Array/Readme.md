@@ -246,3 +246,25 @@ Each problem is implemented from scratch with:
   Output:  
   Subarray: `4 -1 2 1`  
   The maximum subarray sum is `6` 
+  ### 1️⃣9️⃣ Best Time to Buy and Sell Stock (Max Profit)
+
+- **Idea:**  
+  Track the minimum price seen so far while iterating through the array. For each price, calculate the profit if sold at that price and update the maximum profit found.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the maximum profit from a single buy and sell operation in a list of stock prices.
+- **Example:**  
+  Input: `arr = [7, 1, 5, 3, 6, 4]`  
+  Output: Max profit is `5` (buy at `1`, sell at `6`)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+### 2️⃣0️⃣ Rearrange Array Elements by Sign (Alternating Positive & Negative)
+
+- **Idea:**  
+  Create a new array and place positive numbers at even indices and negative numbers at odd indices as you iterate through the input. This ensures positives and negatives alternate, preserving their relative order.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for the result array)
+- **Best Use:** Rearrange an array so that positive and negative numbers alternate, useful for problems requiring sign-based ordering.
+- **Example:**  
+  Input: `nums = [3, -2, 1, -5, 2, -4]`  
+  Output: `[3, -2, 1, -5, 2, -4]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/rearrange-array-elements-by-sign/)
