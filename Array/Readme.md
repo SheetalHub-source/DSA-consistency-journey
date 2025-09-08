@@ -268,3 +268,15 @@ Each problem is implemented from scratch with:
   Input: `nums = [3, -2, 1, -5, 2, -4]`  
   Output: `[3, -2, 1, -5, 2, -4]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/rearrange-array-elements-by-sign/)
+
+### 2️⃣1️⃣ Next Permutation of an Array
+
+- **Idea:**  
+  Find the first index from the end where the current element is less than the next. Swap it with the next larger element to its right, then reverse the subarray after the original index. This generates the next lexicographical permutation.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1) (in-place modification)
+- **Best Use:** Generate the next permutation in lexicographical order for problems involving permutations.
+- **Example:**  
+  Input: `nums = [1, 2, 3]`  
+  Output: `[1, 3, 2]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/next-permutation/)
