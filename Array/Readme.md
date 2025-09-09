@@ -280,3 +280,14 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 2, 3]`  
   Output: `[1, 3, 2]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/next-permutation/)
+### 2️⃣2️⃣ Leaders in an Array
+
+- **Idea:**  
+  Traverse the array from right to left, keeping track of the maximum element seen so far. Any element greater than all elements to its right is a leader. Collect leaders and reverse the list to maintain original order.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for storing leaders)
+- **Best Use:** Find all elements in an array that are greater than all elements to their right.
+- **Example:**  
+  Input: `arr = [16, 17, 4, 3, 5, 2]`  
+  Output: `[17, 5, 2]`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/leaders-in-an-array/)
