@@ -125,3 +125,30 @@ Each problem is implemented from scratch with:
   Input: `arr = [100, 4, 200, 1, 3, 2]`  
   Output: Length of longest consecutive sequence is `4` (sequence: `1, 2, 3, 4`)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+
+### 11. Set Matrix Zeroes
+
+- **Idea:**  
+  Traverse the matrix to find all zero elements. For each zero, set its entire row and column to zero. This can be done using an auxiliary matrix or flags to avoid overwriting zeros prematurely.
+- **Time Complexity:** O(m * n * (m + n)) (with auxiliary matrix approach)
+- **Space Complexity:** O(m * n) (for the flag matrix)
+- **Best Use:** Set entire rows and columns to zero if any element in them is zero, commonly used in matrix manipulation problems.
+- **Example:**  
+  Input:  
+  ```
+  [
+    [1, 2, 3],
+    [4, 0, 6],
+    [7, 8, 9]
+  ]
+  ```
+  Output:  
+  ```
+  [
+    [1, 0, 3],
+    [0, 0, 0],
+    [7, 0, 9]
+  ]
+  ```
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
