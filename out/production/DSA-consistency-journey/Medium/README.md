@@ -152,3 +152,29 @@ Each problem is implemented from scratch with:
   ]
   ```
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
+
+### 12: Rotate Matrix by 90 Degrees
+
+- **Idea:**  
+  First, transpose the matrix (swap rows and columns). Then, reverse each row to achieve a 90-degree clockwise rotation. This is done in-place for square matrices.
+- **Time Complexity:** O(n²)
+- **Space Complexity:** O(1) (in-place rotation)
+- **Best Use:** Efficiently rotate a square matrix by 90 degrees, commonly used in image processing and matrix manipulation.
+- **Example:**  
+  Input:  
+  ```
+  [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ]
+  ```
+  Output:  
+  ```
+  [
+    [7, 4, 1],
+    [8, 5, 2],
+    [9, 6, 3]
+  ]
+  ```
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/rotate-image/)

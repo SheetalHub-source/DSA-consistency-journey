@@ -178,3 +178,18 @@ Each problem is implemented from scratch with:
   ]
   ```
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/rotate-image/)
+# 13. Spiral Matrix Traversal
+    Idea:
+    Traverse the matrix in a spiral order by maintaining boundaries (top, bottom, left, right). Move right across the top row, down the right column, left across the bottom row, and up the left column, shrinking the boundaries after each pass until all elements are visited.
+    Time Complexity: O(m * n) (where m and n are the matrix dimensions)
+    Space Complexity: O(m * n) (for storing the result)
+    Best Use: Retrieve all elements of a 2D matrix in spiral order, useful for matrix traversal problems.
+    Example:
+    Input:
+    [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+    ]
+    Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+*** Problem Link: https://leetcode.com/problems/spiral-matrix/
