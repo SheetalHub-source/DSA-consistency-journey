@@ -193,3 +193,13 @@ Each problem is implemented from scratch with:
     ]
     Output: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 *** Problem Link: https://leetcode.com/problems/spiral-matrix/
+14. Subarrays with Sum Equals K
+    Idea:
+    Use a HashMap to store the cumulative sum (prefix sum) and its frequency as you iterate through the array. For each element, check if (current prefix sum - k) exists in the map. If it does, add its frequency to the count, as it represents the number of subarrays ending at the current index with sum k.
+    Time Complexity: O(n)
+    Space Complexity: O(n) (for the HashMap)
+    Best Use: Count the number of continuous subarrays whose sum equals a given value k.
+    Example:
+    Input: arr = [1, 2, 4, 7, 1, 5, 9, 7, 5, 2], k = 7
+    Output: Number of subarrays with sum 7
+    Problem Link: https://leetcode.com/problems/subarray-sum-equals-k/submissions/1770486937/
