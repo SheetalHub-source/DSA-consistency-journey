@@ -187,3 +187,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [1, 2, 3, 2, 5]`, `k = 5`  
   Output: Longest subarray length with sum `5` is `2`
 - **Problem Link:**https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+### 1️⃣4️⃣ Maximum Number of Words You Can Type
+
+- **Idea:**  
+  Mark all broken letters in a boolean array. For each word in the input text, check if it contains any broken letter. If not, count it as a word that can be typed.
+- **Time Complexity:** O(n + m) (where n = length of text, m = length of brokenLetters)
+- **Space Complexity:** O(1) (fixed array for 26 lowercase letters)
+- **Best Use:** Quickly determine how many words in a sentence can be typed without using any broken keyboard letters.
+- **Example:**  
+  Input: `text = "hello world"`, `brokenLetters = "ad"`  
+  Output: `1` (only "world" can be typed)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-number-of-words-you-can-type/)
