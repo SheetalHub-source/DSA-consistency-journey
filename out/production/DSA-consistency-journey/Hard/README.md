@@ -30,3 +30,16 @@ Each problem is implemented from scratch with:
   ]
   ```
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/pascals-triangle/)
+-
+### 2️⃣ Majority Element II (Elements Appearing More Than n/3 Times)
+
+- **Idea:**  
+  Use a modified Boyer-Moore Voting Algorithm to find all elements that appear more than ⌊n/3⌋ times in the array. Track up to two candidates and their counts, then verify their actual occurrences.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find all majority elements in an array that appear more than n/3 times.
+- **Example:**  
+  Input: `nums = [0, 3, 4, 1, 0]`  
+  Output: `[0]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/majority-element-ii/)
+
