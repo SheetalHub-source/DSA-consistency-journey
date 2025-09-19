@@ -42,4 +42,18 @@ Each problem is implemented from scratch with:
   Input: `nums = [0, 3, 4, 1, 0]`  
   Output: `[0]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/majority-element-ii/)
+### 3️⃣ Three Sum (Find All Unique Triplets That Sum to Zero)
+
+- **Idea:**  
+  Use nested loops or hashing to find all unique triplets in the array that sum to zero. Sort each triplet before adding to a set to avoid duplicates. The brute force approach checks all combinations, while the better approach uses a hashset for faster lookup.
+- **Time Complexity:**
+  - Brute Force: O(n³)
+  - Better Approach: O(n²)
+- **Space Complexity:** O(k) (for storing unique triplets)
+- **Best Use:** Find all unique triplets in an array that sum to zero, a classic interview and coding challenge problem.
+- **Example:**  
+  Input: `arr = [-1, 0, 1, 2, -1, -4]`  
+  Output: `[[-1, -1, 2], [-1, 0, 1]]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/3sum/)
+
 

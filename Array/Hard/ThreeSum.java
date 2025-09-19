@@ -24,7 +24,7 @@ public class ThreeSum {
         List<List<Integer>> res = new ArrayList<>(hs);
         return res;
     }
-    public static List<List<Integer>> threeSumBetterForce(int[] arr){
+    public static List<List<Integer>> threeSumBetterApproach(int[] arr){
         int n = arr.length;
         Set<List<Integer>> st = new HashSet<>();
 
@@ -45,6 +45,33 @@ public class ThreeSum {
         // store the set elements in the answer:
         List<List<Integer>> ans = new ArrayList<>(st);
         return ans;
+    }
+    public static List<List<Integer>> threeSumOptimalApproach(int[] arr){
+      int n = arr.length;
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(arr);
+        for(int i =0;i<n;i++){
+          if(i>0&&arr[i]==arr[i-1]) continue;
+          int j = i+1;
+          int k = n-1;
+          while(j<k){
+              int sum = arr[i]+arr[j]+arr[k];
+              if(sum<0){
+                 j++;
+              }
+              else if(sum>0){
+                k--;
+              }
+              else {
+                  List<Integer> list = Arrays.asList(arr[i],arr[j],arr[k]);
+                  res.add(list);
+                  j++;k--;
+                  while(j<k&&arr[j]==arr[j-1]) j++;
+                  while(j<k&&arr[k]==arr[k+1]) k--;
+              }
+          }
+      }
+        return res;
     }
     public static void main(String[] args) {
         int arr[]={-1,0,1,2,-1,-4};
