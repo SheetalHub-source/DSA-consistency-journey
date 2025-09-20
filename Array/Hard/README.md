@@ -66,5 +66,14 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 0, -1, 0, -2, 2]`, `target = 0`  
   Output: `[[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/4sum/)
+### 5️⃣ Largest Subarray with Zero Sum
 
-
+- **Idea:**  
+  Use a HashMap to store prefix sums and their earliest indices. As you iterate, update the running sum. If the sum is zero or has been seen before, update the maximum length of the subarray found so far.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for the HashMap)
+- **Best Use:** Find the longest contiguous subarray with a sum of zero, useful for subarray and prefix sum problems.
+- **Example:**  
+  Input: `arr = [0, 0, 0, 0, 1, 0]`  
+  Output: `4` (the longest subarray with zero sum is `[0, 0, 0, 0]`)
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)

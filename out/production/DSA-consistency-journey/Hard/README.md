@@ -55,5 +55,16 @@ Each problem is implemented from scratch with:
   Input: `arr = [-1, 0, 1, 2, -1, -4]`  
   Output: `[[-1, -1, 2], [-1, 0, 1]]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/3sum/)
+### 4️⃣ Four Sum (Find All Unique Quadruplets That Sum to Target)
+
+- **Idea:**  
+  Sort the array and use four pointers (two nested loops for the first two numbers, then two pointers for the remaining two). Skip duplicates to ensure unique quadruplets. For each combination, check if the sum equals the target and add to the result.
+- **Time Complexity:** O(n³)
+- **Space Complexity:** O(k) (for storing unique quadruplets)
+- **Best Use:** Find all unique quadruplets in an array that sum to a given target, useful for advanced array and combination problems.
+- **Example:**  
+  Input: `nums = [1, 0, -1, 0, -2, 2]`, `target = 0`  
+  Output: `[[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/4sum/)
 
 
