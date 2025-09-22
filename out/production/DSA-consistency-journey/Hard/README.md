@@ -77,3 +77,21 @@ Each problem is implemented from scratch with:
   Input: `arr = [0, 0, 0, 0, 1, 0]`  
   Output: `4` (the longest subarray with zero sum is `[0, 0, 0, 0]`)
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1)
+### 6️⃣ Maximum Rectangle Area in a Binary Matrix
+
+- **Idea:**  
+  Treat each row of the matrix as the base of a histogram. For each row, calculate the height of consecutive 1s in each column. Use a stack-based approach to find the largest rectangle area in the histogram for each row, updating the maximum area found.
+- **Time Complexity:** O(n * m)
+- **Space Complexity:** O(m) (for the stack and height array)
+- **Best Use:** Find the largest rectangle containing only 1s in a binary matrix, useful for image processing and dynamic programming problems.
+- **Example:**  
+  Input:
+  ```
+  [
+    [0, 0, 0, 0],
+    [1, 1, 1, 1],
+    [1, 1, 1, 1]
+  ]
+  ```
+  Output: `8` (the largest rectangle of 1s has area 8)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/maximal-rectangle/)
