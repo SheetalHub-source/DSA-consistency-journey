@@ -95,3 +95,15 @@ Each problem is implemented from scratch with:
   ```
   Output: `8` (the largest rectangle of 1s has area 8)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/maximal-rectangle/)
+
+### 7️⃣ Count Subarrays with Given XOR
+
+- **Idea:**  
+  Use a HashMap to store the frequency of prefix XORs. For each element, compute the current prefix XOR and check if `(prefix XOR ^ k)` exists in the map. If it does, add its frequency to the count. Update the map with the current prefix XOR.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (for the HashMap)
+- **Best Use:** Efficiently count the number of subarrays whose XOR equals a given value, useful for bit manipulation and prefix sum problems.
+- **Example:**  
+  Input: `arr = [4, 2, 2, 6, 4]`, `k = 6`  
+  Output: `4`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/count-the-number-of-subarrays-with-given-xor/1)

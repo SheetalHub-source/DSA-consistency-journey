@@ -199,3 +199,15 @@ Each problem is implemented from scratch with:
   Input: `text = "hello world"`, `brokenLetters = "ad"`  
   Output: `1` (only "world" can be typed)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-number-of-words-you-can-type/)
+- 
+### 1️⃣5️⃣ Generate Binary Numbers from 1 to N
+
+- **Idea:**  
+  For each number from 1 to N, convert it to its binary representation using repeated division by 2. Reverse the result to get the correct binary string and collect all binary numbers in a list.
+- **Time Complexity:** O(n * log n) (for converting each number to binary)
+- **Space Complexity:** O(n * log n) (for storing all binary strings)
+- **Best Use:** Generate binary representations for a range of numbers, useful for bit manipulation and number theory problems.
+- **Example:**  
+  Input: `n = 5`  
+  Output: `["1", "10", "11", "100", "101"]`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1)
