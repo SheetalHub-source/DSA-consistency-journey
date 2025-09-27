@@ -211,3 +211,14 @@ Each problem is implemented from scratch with:
   Input: `n = 5`  
   Output: `["1", "10", "11", "100", "101"]`
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1)
+### 1️⃣6️⃣ Rotate Deque by K Positions
+
+- **Idea:**  
+  Convert the deque to a list for easy slicing. For right rotation, move the last k elements to the front; for left rotation, move the first k elements to the end. Clear and refill the deque with the rotated elements.
+- **Time Complexity:** O(n) (where n is the size of the deque)
+- **Space Complexity:** O(n) (for the temporary list)
+- **Best Use:** Efficiently rotate a deque left or right by k positions, useful for queue and sliding window problems.
+- **Example:**  
+  Input: `dq = [1, 2, 3, 4, 5]`, `type = 1` (right), `k = 2`  
+  Output: `[4, 5, 1, 2, 3]`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/rotate-deque-by-k/)
