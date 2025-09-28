@@ -107,3 +107,14 @@ Each problem is implemented from scratch with:
   Input: `arr = [4, 2, 2, 6, 4]`, `k = 6`  
   Output: `4`
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/count-the-number-of-subarrays-with-given-xor/1)
+### 8️⃣ Merge Intervals
+
+- **Idea:**  
+  First, sort the intervals based on their start values (and end values if starts are equal). Then, iterate through the intervals and merge overlapping ones by updating the end value. Add non-overlapping intervals directly to the result.
+- **Time Complexity:** O(n log n) (due to sorting)
+- **Space Complexity:** O(n) (for storing merged intervals)
+- **Best Use:** Efficiently merge overlapping intervals, useful in scheduling, calendar, and range problems.
+- **Example:**  
+  Input: `intervals = [[4, 1], [4, 7], [10, 8], [15, 18]]`  
+  Output: `[[1, 7], [8, 10], [15, 18]]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-intervals/)
