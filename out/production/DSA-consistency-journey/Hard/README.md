@@ -118,3 +118,14 @@ Each problem is implemented from scratch with:
   Input: `intervals = [[4, 1], [4, 7], [10, 8], [15, 18]]`  
   Output: `[[1, 7], [8, 10], [15, 18]]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-intervals/)
+### 9️⃣ Merge Two Sorted Arrays
+
+- **Idea:**  
+  Use two pointers to merge two sorted arrays into one. Copy the first m elements of `nums1` into a temporary array, then merge elements from the temporary array and `nums2` back into `nums1` in sorted order.
+- **Time Complexity:** O(m + n)
+- **Space Complexity:** O(m) (for the temporary array)
+- **Best Use:** Efficiently merge two sorted arrays, especially when one has enough space to hold the result (as in many coding interviews).
+- **Example:**  
+  Input: `nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`, `nums2 = [2, 5, 6]`, `n = 3`  
+  Output: `[1, 2, 2, 3, 5, 6]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-sorted-array/)
