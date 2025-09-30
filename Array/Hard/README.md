@@ -141,3 +141,18 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 2, -3, 0, -4, -5]`  
   Output: `20` (the maximum product subarray is `[-4, -5]`)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-product-subarray/)
+
+
+### 1️⃣1️⃣ Merge Two Sorted Arrays (with and without Extra Space)
+
+- **Idea:**  
+  There are two approaches:
+  1. **With Extra Space:** Copy the first m elements of `nums1` into a temporary array, then merge with `nums2` back into `nums1` using two pointers.
+  2. **Without Extra Space:** Start merging from the end of `nums1` and `nums2` (since `nums1` has enough space), placing the largest elements at the back and working backwards.
+- **Time Complexity:** O(m + n)
+- **Space Complexity:** O(m) for the extra space approach, O(1) for the in-place approach
+- **Best Use:** Efficiently merge two sorted arrays, especially when one has extra space at the end.
+- **Example:**  
+  Input: `nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`, `nums2 = [2, 5, 6]`, `n = 3`  
+  Output: `[1, 2, 2, 3, 5, 6]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-sorted-array/)

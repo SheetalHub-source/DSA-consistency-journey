@@ -129,3 +129,15 @@ Each problem is implemented from scratch with:
   Input: `nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`, `nums2 = [2, 5, 6]`, `n = 3`  
   Output: `[1, 2, 2, 3, 5, 6]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-sorted-array/)
+
+### 🔟 Maximum Product Subarray
+
+- **Idea:**  
+  Track both the maximum and minimum products ending at each position, since a negative number can turn a minimum product into a maximum (and vice versa). Update the result with the highest product found so far.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the contiguous subarray within an array (containing at least one number) which has the largest product, useful for problems involving products and sign changes.
+- **Example:**  
+  Input: `nums = [1, 2, -3, 0, -4, -5]`  
+  Output: `20` (the maximum product subarray is `[-4, -5]`)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-product-subarray/)
