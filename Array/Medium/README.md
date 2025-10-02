@@ -203,3 +203,14 @@ Each problem is implemented from scratch with:
     Input: arr = [1, 2, 4, 7, 1, 5, 9, 7, 5, 2], k = 7
     Output: Number of subarrays with sum 7
     Problem Link: https://leetcode.com/problems/subarray-sum-equals-k/submissions/1770486937/
+15. ###  Water Bottles II (Maximum Bottles Drunk with Exchanges)
+
+- **Idea:**  
+  Start with a given number of full bottles. Drink all and exchange empty bottles for new full ones as long as you have enough for an exchange. After each exchange, the number of bottles needed for the next exchange increases by one. Continue until you can't exchange anymore.
+- **Time Complexity:** O(numBottles)
+- **Space Complexity:** O(1)
+- **Best Use:** Calculate the maximum number of bottles you can drink given a dynamic exchange rate, useful for simulation and greedy problems.
+- **Example:**  
+  Input: `numBottles = 9`, `numExchange = 3`  
+  Output: `10`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/water-bottles-ii/)
