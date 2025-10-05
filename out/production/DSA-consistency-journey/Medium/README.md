@@ -214,3 +214,22 @@ Each problem is implemented from scratch with:
   Input: `numBottles = 9`, `numExchange = 3`  
   Output: `10`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/water-bottles-ii/)
+### 16. Rat in a Maze (All Paths from Top-Left to Bottom-Right)
+
+- **Idea:**  
+  Use backtracking to explore all possible paths from the top-left to the bottom-right of a binary matrix (maze). At each step, move in all four directions (Down, Left, Right, Up) if the move is valid and not yet visited. Mark the path and backtrack as needed. Collect all valid paths as strings of directions.
+- **Time Complexity:** O(4^(n*n)) (in the worst case, for an n x n maze)
+- **Space Complexity:** O(n*n) (for the recursion stack and visited matrix)
+- **Best Use:** Find all possible paths in a maze, useful for backtracking, recursion, and pathfinding problems.
+- **Example:**  
+  Input:
+  ```
+  [
+    [1, 0, 0, 0],
+    [1, 1, 0, 1],
+    [1, 1, 0, 0],
+    [0, 1, 1, 1]
+  ]
+  ```
+  Output: `["DDRDRR", "DRDDRR"]`
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1)
