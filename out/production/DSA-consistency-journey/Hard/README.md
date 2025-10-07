@@ -156,3 +156,17 @@ Each problem is implemented from scratch with:
   Input: `nums1 = [1, 2, 3, 0, 0, 0]`, `m = 3`, `nums2 = [2, 5, 6]`, `n = 3`  
   Output: `[1, 2, 2, 3, 5, 6]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/merge-sorted-array/)
+
+### 1️⃣2️⃣ Find the Repeating and Missing Number in an Array
+
+- **Idea:**  
+  There are two main approaches:
+  1. **HashMap Approach:** Count the frequency of each number. The number with frequency > 1 is repeating, and the number missing from the map is the missing one.
+  2. **Mathematical Approach:** Use the sum and sum of squares formulas for the first n natural numbers. Calculate the difference between the actual and expected sums to derive equations for the repeating and missing numbers.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1) for the mathematical approach, O(n) for the HashMap approach
+- **Best Use:** Efficiently find both the repeating and missing numbers in an array containing numbers from 1 to n.
+- **Example:**  
+  Input: `nums = [6, 5, 7, 1, 8, 6, 4, 3, 2]`  
+  Output: `[6, 9]` (6 is repeating, 9 is missing)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/set-mismatch/)
