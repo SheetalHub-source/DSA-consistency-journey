@@ -170,3 +170,18 @@ Each problem is implemented from scratch with:
   Input: `nums = [6, 5, 7, 1, 8, 6, 4, 3, 2]`  
   Output: `[6, 9]` (6 is repeating, 9 is missing)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/set-mismatch/)
+### 1️⃣3️⃣ Count Inversions in an Array
+
+- **Idea:**  
+  There are two approaches:
+  1. **Brute Force:** Use nested loops to count pairs `(i, j)` such that `i < j` and `arr[i] > arr[j]`.
+  2. **Optimal (Merge Sort):** Use a modified merge sort to count inversions while merging. When an element from the right subarray is placed before an element from the left, all remaining elements in the left subarray form inversions.
+- **Time Complexity:**
+  - Brute Force: O(n²)
+  - Merge Sort: O(n log n)
+- **Space Complexity:** O(n) (for the temporary arrays in merge sort)
+- **Best Use:** Efficiently count the number of inversions in an array, useful for measuring how far an array is from being sorted.
+- **Example:**  
+  Input: `arr = [2, 4, 1, 3, 5]`  
+  Output: `3` (inversions are: (2,1), (4,1), (4,3))
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/inversion-of-array/0)

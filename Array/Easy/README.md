@@ -222,3 +222,15 @@ Each problem is implemented from scratch with:
   Input: `dq = [1, 2, 3, 4, 5]`, `type = 1` (right), `k = 2`  
   Output: `[4, 5, 1, 2, 3]`
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/rotate-deque-by-k/)
+
+### 1️⃣7️⃣ Search Insert Position
+
+- **Idea:**  
+  Use binary search to find the index of the target in a sorted array. If the target is not found, return the index where it should be inserted to maintain the sorted order.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the position to insert a target value in a sorted array, useful for search and insertion problems.
+- **Example:**  
+  Input: `nums = [1, 3, 5, 6]`, `target = 2`  
+  Output: `1` (2 should be inserted at index 1)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/search-insert-position/)
