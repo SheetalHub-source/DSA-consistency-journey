@@ -234,3 +234,14 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 3, 5, 6]`, `target = 2`  
   Output: `1` (2 should be inserted at index 1)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/search-insert-position/)
+### 1️⃣8️⃣ Plus One
+
+- **Idea:**  
+  Traverse the digits array from the end. If the current digit is less than 9, increment it and return. If it's 9, set it to 0 and continue. If all digits are 9, create a new array with an extra digit at the front set to 1.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n) (in the worst case, when a new digit is added)
+- **Best Use:** Add one to a number represented as an array of digits, handling carry-over efficiently.
+- **Example:**  
+  Input: `digits = [9, 9, 9]`  
+  Output: `[1, 0, 0, 0]`
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/plus-one/)
