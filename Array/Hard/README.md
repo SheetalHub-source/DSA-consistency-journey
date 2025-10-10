@@ -185,3 +185,15 @@ Each problem is implemented from scratch with:
   Input: `arr = [2, 4, 1, 3, 5]`  
   Output: `3` (inversions are: (2,1), (4,1), (4,3))
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/problems/inversion-of-array/0)
+
+### 1️4 Reverse Pairs (Count Important Reverse Pairs)
+
+- **Idea:**  
+  Use a modified merge sort to count pairs `(i, j)` such that `i < j` and `nums[i] > 2 * nums[j]`. For each merge step, count the qualifying pairs before merging the two sorted halves. Then, merge the arrays in sorted order to maintain efficiency.
+- **Time Complexity:** O(n log n)
+- **Space Complexity:** O(n) (for temporary arrays during merge)
+- **Best Use:** Efficiently count reverse pairs in an array, useful for advanced sorting and counting problems.
+- **Example:**  
+  Input: `nums = [1, 3, 2, 3, 1]`  
+  Output: `2` (reverse pairs: (3,1) and (3,1))
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/reverse-pairs/)
