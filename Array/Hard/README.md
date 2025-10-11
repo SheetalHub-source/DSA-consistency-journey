@@ -197,3 +197,14 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 3, 2, 3, 1]`  
   Output: `2` (reverse pairs: (3,1) and (3,1))
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/reverse-pairs/)
+### 15. Maximum Product Subarray
+
+- **Idea:**  
+  Track both the maximum and minimum products ending at each position, since multiplying by a negative number can swap the maximum and minimum. Update the result with the highest product found so far as you iterate through the array.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the contiguous subarray within an array (containing at least one number) which has the largest product, useful for problems involving products and sign changes.
+- **Example:**  
+  Input: `nums = [2, 3, -2, 4]`  
+  Output: `6` (the maximum product subarray is `[2, 3]`)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/maximum-product-subarray/)
