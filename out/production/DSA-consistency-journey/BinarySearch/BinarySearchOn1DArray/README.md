@@ -9,3 +9,14 @@
   Input: `arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, `target = 7`  
   Output: `Element found at index: 6`
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
+### 2️⃣ Implement Lower Bound (Binary Search)
+
+- **Idea:**  
+  Use binary search to find the index of the first element in a sorted array that is greater than or equal to a given target (`x`). If no such element exists, return the length of the array.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the lower bound position for insertion or search, useful in range queries and ordered data problems.
+- **Example:**  
+  Input: `arr = [2, 3, 7, 10, 11, 11, 25]`, `target = 9`  
+  Output: `Lower bound index: 3` (element `10` is the first ≥ 9)
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/lower-bound-in-cpp-stl/)

@@ -20,3 +20,15 @@
   Input: `arr = [2, 3, 7, 10, 11, 11, 25]`, `target = 9`  
   Output: `Lower bound index: 3` (element `10` is the first ≥ 9)
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/lower-bound-in-cpp-stl/)
+
+### 3️⃣ Implement Upper Bound (Binary Search)
+
+- **Idea:**  
+  Use binary search to find the index of the first element in a sorted array that is strictly greater than a given target (`x`). If no such element exists, return the length of the array.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the upper bound position for insertion or search, useful in range queries and ordered data problems.
+- **Example:**  
+  Input: `arr = [2, 3, 7, 10, 11, 11, 25]`, `x = 100`  
+  Output: `7` (no element is greater than 100, so returns array length)
+- **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/upper-bound-in-cpp-stl/)
