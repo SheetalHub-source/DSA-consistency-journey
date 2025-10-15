@@ -245,3 +245,14 @@ Each problem is implemented from scratch with:
   Input: `digits = [9, 9, 9]`  
   Output: `[1, 0, 0, 0]`
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/plus-one/)
+## 19 Contains Duplicate
+
+- **Idea:**  
+  Sort the array and check for any consecutive duplicate elements. If a duplicate is found, return true; otherwise, return false.
+- **Time Complexity:** O(n log n) (due to sorting)
+- **Space Complexity:** O(1) (if sorting in-place)
+- **Best Use:** Quickly check if an array contains any duplicate values, useful for validation and uniqueness problems.
+- **Example:**  
+  Input: `nums = [1, 2, 3, 1]`  
+  Output: `true` (since 1 appears twice)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/contains-duplicate/)
