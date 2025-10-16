@@ -32,3 +32,14 @@
   Input: `arr = [2, 3, 7, 10, 11, 11, 25]`, `x = 100`  
   Output: `7` (no element is greater than 100, so returns array length)
 - **Problem Link:** [GeeksforGeeks](https://www.geeksforgeeks.org/upper-bound-in-cpp-stl/)
+### 4️⃣ Search Insert Position
+
+- **Idea:**  
+  Use binary search to find the index of the target in a sorted array. If the target is not found, return the index where it should be inserted to maintain the sorted order.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently find the position to insert a target value in a sorted array, useful for search and insertion problems.
+- **Example:**  
+  Input: `arr = [1, 3]`, `target = 2`  
+  Output: `1` (2 should be inserted at index 1)
+- **Problem Link:** [LeetCode](https://leetcode.com/problems/search-insert-position/)
