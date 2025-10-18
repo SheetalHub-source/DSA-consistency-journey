@@ -256,3 +256,13 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 2, 3, 1]`  
   Output: `true` (since 1 appears twice)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/contains-duplicate/)
+# 2️⃣0️⃣ Running Sum of 1D Array
+- **Idea:**  
+  Traverse the array while maintaining a cumulative sum. Update each element with the current cumulative sum to get the running sum.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1) (in-place modification)
+- **Best Use:** Calculate the running sum of an array efficiently, useful for prefix sum problems.
+- **Example:**  
+  Input: `nums = [1, 2, 3, 4]`  
+  Output: `[1, 3, 6, 10]` (running sums)
+  - **Problem Link:** [LeetCode](https://leetcode.com/problems/running-sum-of-1d-array/)    
