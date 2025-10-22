@@ -43,3 +43,15 @@
   Input: `arr = [1, 3]`, `target = 2`  
   Output: `1` (2 should be inserted at index 1)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/search-insert-position/)
+
+### 5️⃣ First and Last Occurrences in a Sorted Array
+
+- **Idea:**  
+  Use binary search twice — once to find the first (leftmost) index of the target and once to find the last (rightmost) index. For the first occurrence, when you find target move the right bound to mid-1 to continue searching left. For the last occurrence, when you find target move the left bound to mid+1 to continue searching right.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Get the index range of a target value in a sorted array (or return [-1, -1] if not present).
+- **Example:**  
+  Input: `nums = [5, 7, 7, 8, 8, 10]`, `target = 8`  
+  Output: `[3, 4]`
+- **Problem Link:** [LeetCode - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
