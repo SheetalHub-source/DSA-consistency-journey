@@ -55,3 +55,14 @@
   Input: `nums = [5, 7, 7, 8, 8, 10]`, `target = 8`  
   Output: `[3, 4]`
 - **Problem Link:** [LeetCode - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+### 6️⃣ Count Occurrences of a Number in a Sorted Array
+
+- **Idea:**  
+  Use binary search twice to locate the first and last positions of the target value. If the value is present, the count is `last - first + 1`; otherwise the count is `0`.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently count how many times a value appears in a sorted array (useful when duplicates exist).
+- **Example:**  
+  Input: `arr = [2, 4, 6, 8, 8, 8, 11, 13]`, `x = 8`  
+  Output: `The number of occurrences is: 3`
+- **Problem Link:** [GeeksforGeeks — Count number of occurrences in a sorted array](https://www.geeksforgeeks.org/count-number-of-occurrences-in-a-sorted-array/)
