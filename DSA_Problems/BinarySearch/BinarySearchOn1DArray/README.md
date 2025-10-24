@@ -66,3 +66,14 @@
   Input: `arr = [2, 4, 6, 8, 8, 8, 11, 13]`, `x = 8`  
   Output: `The number of occurrences is: 3`
 - **Problem Link:** [GeeksforGeeks — Count number of occurrences in a sorted array](https://www.geeksforgeeks.org/count-number-of-occurrences-in-a-sorted-array/)
+### 7️⃣ Search in Rotated Sorted Array
+
+- **Idea:**  
+  Use a modified binary search. At each step determine which half is sorted (left → mid or mid → right). If the target lies within the sorted half, narrow the search to that half; otherwise search the other half.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the index of a target in a sorted array that has been rotated at an unknown pivot.
+- **Example:**  
+  Input: `arr = [7, 8, 9, 1, 2, 3, 4, 5, 6]`, `target = 1`  
+  Output: `The index is: 3`
+- **Problem Link:** [LeetCode - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
