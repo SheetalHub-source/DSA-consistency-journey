@@ -43,3 +43,37 @@
   Input: `arr = [1, 3]`, `target = 2`  
   Output: `1` (2 should be inserted at index 1)
 - **Problem Link:** [LeetCode](https://leetcode.com/problems/search-insert-position/)
+
+### 5️⃣ First and Last Occurrences in a Sorted Array
+
+- **Idea:**  
+  Use binary search twice — once to find the first (leftmost) index of the target and once to find the last (rightmost) index. For the first occurrence, when you find target move the right bound to mid-1 to continue searching left. For the last occurrence, when you find target move the left bound to mid+1 to continue searching right.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Get the index range of a target value in a sorted array (or return [-1, -1] if not present).
+- **Example:**  
+  Input: `nums = [5, 7, 7, 8, 8, 10]`, `target = 8`  
+  Output: `[3, 4]`
+- **Problem Link:** [LeetCode - Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+### 6️⃣ Count Occurrences of a Number in a Sorted Array
+
+- **Idea:**  
+  Use binary search twice to locate the first and last positions of the target value. If the value is present, the count is `last - first + 1`; otherwise the count is `0`.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Efficiently count how many times a value appears in a sorted array (useful when duplicates exist).
+- **Example:**  
+  Input: `arr = [2, 4, 6, 8, 8, 8, 11, 13]`, `x = 8`  
+  Output: `The number of occurrences is: 3`
+- **Problem Link:** [GeeksforGeeks — Count number of occurrences in a sorted array](https://www.geeksforgeeks.org/count-number-of-occurrences-in-a-sorted-array/)
+### 7️⃣ Search in Rotated Sorted Array
+
+- **Idea:**  
+  Use a modified binary search. At each step determine which half is sorted (left → mid or mid → right). If the target lies within the sorted half, narrow the search to that half; otherwise search the other half.
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+- **Best Use:** Find the index of a target in a sorted array that has been rotated at an unknown pivot.
+- **Example:**  
+  Input: `arr = [7, 8, 9, 1, 2, 3, 4, 5, 6]`, `target = 1`  
+  Output: `The index is: 3`
+- **Problem Link:** [LeetCode - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
