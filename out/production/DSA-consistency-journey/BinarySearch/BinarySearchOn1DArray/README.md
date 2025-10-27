@@ -77,3 +77,19 @@
   Input: `arr = [7, 8, 9, 1, 2, 3, 4, 5, 6]`, `target = 1`  
   Output: `The index is: 3`
 - **Problem Link:** [LeetCode - Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+
+### ⃣8  Search in Rotated Sorted Array II (Handles Duplicates)
+
+- **Idea:**  
+  Use a modified binary search that accounts for duplicates. At each step check mid; if values at low, mid, and high are equal, move pointers inward. Otherwise determine which half is sorted and decide where the target may lie, narrowing the search accordingly.
+
+- **Time Complexity:** O(log n) on average, O(n) in the worst case (when duplicates force linear scans)
+- **Space Complexity:** O(1)
+
+- **Best Use:** Find whether a target exists in a rotated sorted array that may contain duplicate elements.
+
+- **Example:**  
+  Input: `arr = [1,0,1,1,1]`, `target = 0`  
+  Output: `true`
+
+- **Problem Link:** [LeetCode - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)

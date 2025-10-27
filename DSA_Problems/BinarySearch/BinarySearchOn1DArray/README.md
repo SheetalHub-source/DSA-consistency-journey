@@ -93,3 +93,18 @@
   Output: `true`
 
 - **Problem Link:** [LeetCode - Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+### 9️⃣ Min in Rotated Sorted Array
+
+- **Idea:**  
+  Use a modified binary search to find the minimum element in a rotated sorted array. Compare the middle element with the rightmost element: if arr[mid] > arr[high], the minimum is in the right half; otherwise it's in the left half (including mid). Handle duplicates by shrinking bounds when low, mid, and high are equal.
+
+- **Time Complexity:** O(log n) on average, O(n) worst-case (when duplicates force linear behavior)
+- **Space Complexity:** O(1)
+
+- **Best Use:** Find the smallest element in a rotated sorted array (array originally sorted in ascending order and then rotated).
+
+- **Example:**  
+  Input: `arr = [2, 1]`  
+  Output: `1`
+
+- **Problem Link:** [LeetCode - Find Minimum in Rotated Sorted Array (153)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
