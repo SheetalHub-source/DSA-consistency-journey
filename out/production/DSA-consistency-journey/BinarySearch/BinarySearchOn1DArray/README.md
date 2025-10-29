@@ -108,3 +108,18 @@
   Output: `1`
 
 - **Problem Link:** [LeetCode - Find Minimum in Rotated Sorted Array (153)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+### 10. Sorted Array Rotation Count
+
+- **Idea:**  
+  Find the index of the minimum element using binary search. In a sorted array rotated k times, the index of the smallest element equals the rotation count. Use a modified binary search: compare mid with high to decide which half contains the minimum.
+
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+
+- **Best Use:** Determine how many times a sorted array has been rotated (useful for restoring original order or pivot-related problems).
+
+- **Example:**  
+  Input: `arr = [4, 5, 6, 1, 2, 3, 4, 5]`  
+  Output: `Rotation count = 3` (minimum element `1` is at index 3)
+
+- **Problem Link:** [GeeksforGeeks — Find rotation count in rotated sorted array](https://www.geeksforgeeks.org/write-a-program-to-find-the-number-of-times-a-sorted-and-rotated-array-is-rotated/)

@@ -123,3 +123,18 @@
   Output: `Rotation count = 3` (minimum element `1` is at index 3)
 
 - **Problem Link:** [GeeksforGeeks — Find rotation count in rotated sorted array](https://www.geeksforgeeks.org/write-a-program-to-find-the-number-of-times-a-sorted-and-rotated-array-is-rotated/)
+### 11. Single Element in a Sorted Array
+
+- **Idea:**  
+  Use binary search on the paired structure. For an array where every element appears exactly twice except one, pairs start at even indices before the unique element and shift after it. At each step, make `mid` even (if needed) and compare `arr[mid]` with `arr[mid+1]`. If they match, the single element is to the right; otherwise it's to the left (including `mid`).
+
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+
+- **Best Use:** Find the single non-duplicate element in a sorted array where all other elements appear exactly twice.
+
+- **Example:**  
+  Input: `arr = [0, 0, 1, 1, 2, 3, 3]`  
+  Output: `2`
+
+- **Problem Link:** [LeetCode - Single Element in a Sorted Array (540)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
