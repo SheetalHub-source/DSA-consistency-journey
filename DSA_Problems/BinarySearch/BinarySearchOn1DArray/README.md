@@ -138,3 +138,13 @@
   Output: `2`
 
 - **Problem Link:** [LeetCode - Single Element in a Sorted Array (540)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+### 12. Find Peak Element
+- **Idea:**  
+  Use binary search to find a peak element in an array where a peak is defined as an element greater than its neighbors. At each step, compare the middle element with its right neighbor: if `arr[mid] < arr[mid + 1]`, the peak lies to the right; otherwise, it lies to the left (including mid).
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+  - **Best Use:** Efficiently find a peak element in an unsorted array.     
+  - **Example:**  
+  Input: `arr = [1, 2, 3, 1]`  
+  Output: `2` (index of peak element `3`)
+  - **Problem Link:** [LeetCode - Find Peak Element (162)](https://leetcode.com/problems/find-peak-element/)
