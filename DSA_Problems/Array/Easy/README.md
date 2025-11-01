@@ -278,3 +278,13 @@ Each problem is implemented from scratch with:
     - `nums2 = [2, 2]`  
     Output: `[2]` (intersection)
     - **Problem Link:** [LeetCode](https://leetcode.com/problems/intersection-of-two-arrays/)
+    # ## 2️⃣2️⃣ Find Third Maximum in an Array
+  - - **Idea:**
+  - Traverse the array while maintaining three variables to track the first, second, and third maximum unique values. Update these variables as you encounter larger values.
+  - **Time Complexity:** O(n)
+  - **Space Complexity:** O(1)
+    - **Best Use:** Find the third maximum unique value in an array efficiently.
+    - **Example:**  
+    Input: `nums = [3, 2, 1]`  
+    Output: `1` (third maximum)
+    - **Problem Link:** [LeetCode](https://leetcode.com/problems/third-maximum-number/)
