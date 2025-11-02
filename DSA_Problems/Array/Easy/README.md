@@ -288,3 +288,13 @@ Each problem is implemented from scratch with:
     Input: `nums = [3, 2, 1]`  
     Output: `1` (third maximum)
     - **Problem Link:** [LeetCode](https://leetcode.com/problems/third-maximum-number/)
+    # ## 2️⃣3️⃣ How Many Numbers Are Smaller Than the Current Number
+  - - **Idea:**
+  - Create a frequency array to count occurrences of each number. Then, compute a prefix sum array to determine how many numbers are smaller than each number.
+  - **Time Complexity:** O(n + k) (where k is the range of numbers)
+    - **Space Complexity:** O(k)
+    - **Best Use:** Efficiently count how many numbers are smaller than each element in an array.
+      - **Example:**  
+      Input: `nums = [8, 1, 2, 2, 3]`  
+      Output: `[4, 0, 1, 1, 3]`
+        - **Problem Link:** [LeetCode](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
