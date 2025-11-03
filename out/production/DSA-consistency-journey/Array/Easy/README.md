@@ -266,3 +266,35 @@ Each problem is implemented from scratch with:
   Input: `nums = [1, 2, 3, 4]`  
   Output: `[1, 3, 6, 10]` (running sums)
   - **Problem Link:** [LeetCode](https://leetcode.com/problems/running-sum-of-1d-array/)    
+  - ## 2️⃣1️⃣ Find Intersection of Array
+  - - **Idea:**  
+  - Use two pointers to traverse both sorted arrays. Compare elements and add common elements to the result list, ensuring no duplicates.
+  - **Time Complexity:** O(n + m) (where n and m are the lengths of the two arrays)
+  - **Space Complexity:** O(min(n, m)) (for storing the intersection)
+  - **Best Use:** Efficiently find common elements between two sorted arrays.
+    - **Example:**  
+    Input:
+    - `nums1 = [1, 2, 2, 1]`
+    - `nums2 = [2, 2]`  
+    Output: `[2]` (intersection)
+    - **Problem Link:** [LeetCode](https://leetcode.com/problems/intersection-of-two-arrays/)
+    # ## 2️⃣2️⃣ Find Third Maximum in an Array
+  - - **Idea:**
+  - Traverse the array while maintaining three variables to track the first, second, and third maximum unique values. Update these variables as you encounter larger values.
+  - **Time Complexity:** O(n)
+  - **Space Complexity:** O(1)
+    - **Best Use:** Find the third maximum unique value in an array efficiently.
+    - **Example:**  
+    Input: `nums = [3, 2, 1]`  
+    Output: `1` (third maximum)
+    - **Problem Link:** [LeetCode](https://leetcode.com/problems/third-maximum-number/)
+    # ## 2️⃣3️⃣ How Many Numbers Are Smaller Than the Current Number
+  - - **Idea:**
+  - Create a frequency array to count occurrences of each number. Then, compute a prefix sum array to determine how many numbers are smaller than each number.
+  - **Time Complexity:** O(n + k) (where k is the range of numbers)
+    - **Space Complexity:** O(k)
+    - **Best Use:** Efficiently count how many numbers are smaller than each element in an array.
+      - **Example:**  
+      Input: `nums = [8, 1, 2, 2, 3]`  
+      Output: `[4, 0, 1, 1, 3]`
+        - **Problem Link:** [LeetCode](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)

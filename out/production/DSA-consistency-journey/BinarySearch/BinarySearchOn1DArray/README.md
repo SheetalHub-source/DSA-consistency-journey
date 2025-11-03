@@ -123,3 +123,28 @@
   Output: `Rotation count = 3` (minimum element `1` is at index 3)
 
 - **Problem Link:** [GeeksforGeeks — Find rotation count in rotated sorted array](https://www.geeksforgeeks.org/write-a-program-to-find-the-number-of-times-a-sorted-and-rotated-array-is-rotated/)
+### 11. Single Element in a Sorted Array
+
+- **Idea:**  
+  Use binary search on the paired structure. For an array where every element appears exactly twice except one, pairs start at even indices before the unique element and shift after it. At each step, make `mid` even (if needed) and compare `arr[mid]` with `arr[mid+1]`. If they match, the single element is to the right; otherwise it's to the left (including `mid`).
+
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+
+- **Best Use:** Find the single non-duplicate element in a sorted array where all other elements appear exactly twice.
+
+- **Example:**  
+  Input: `arr = [0, 0, 1, 1, 2, 3, 3]`  
+  Output: `2`
+
+- **Problem Link:** [LeetCode - Single Element in a Sorted Array (540)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
+### 12. Find Peak Element
+- **Idea:**  
+  Use binary search to find a peak element in an array where a peak is defined as an element greater than its neighbors. At each step, compare the middle element with its right neighbor: if `arr[mid] < arr[mid + 1]`, the peak lies to the right; otherwise, it lies to the left (including mid).
+- **Time Complexity:** O(log n)
+- **Space Complexity:** O(1)
+  - **Best Use:** Efficiently find a peak element in an unsorted array.     
+  - **Example:**  
+  Input: `arr = [1, 2, 3, 1]`  
+  Output: `2` (index of peak element `3`)
+  - **Problem Link:** [LeetCode - Find Peak Element (162)](https://leetcode.com/problems/find-peak-element/)
