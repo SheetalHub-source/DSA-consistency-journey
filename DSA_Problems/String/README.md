@@ -13,3 +13,13 @@
   Output: `5`
 
 - **Problem Link:** [LeetCode - Length of Last Word](https://leetcode.com/problems/length-of-last-word/)
+### 2️⃣ Reverse String
+- **Idea:**  
+  Use two pointers, one at the start and one at the end of the string. Swap characters at these pointers and move them towards each other until they meet.
+  - **Time Complexity:** O(n) (single pass)
+  - **Space Complexity:** O(1) (in-place)
+  - **Best Use:** Reverse a string in place without using extra space.
+  - **Example:**  
+    Input: `s = ["h","e","l","l","o"]`  
+    Output: `["o","l","l","e","h"]`
+  - **Problem Link:** [LeetCode - Reverse String](https://leetcode.com/problems/reverse-string/)
