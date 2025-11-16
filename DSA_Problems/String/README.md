@@ -23,3 +23,14 @@
     Input: `s = ["h","e","l","l","o"]`  
     Output: `["o","l","l","e","h"]`
   - **Problem Link:** [LeetCode - Reverse String](https://leetcode.com/problems/reverse-string/)
+  ### 3️⃣ Valid Anagram
+- **Idea:**  
+  Use a frequency array of size 26 to count occurrences of each character in both strings. Decrement counts for the second string and check if all counts are zero.
+  - **Time Complexity:** O(n) (single pass through both strings)
+  - **Space Complexity:** O(1) (fixed size array)
+  - **Best Use:** Check if two strings are anagrams of each other efficiently.
+  - **Example:**  
+    Input: `s = "anagram", t = "nagaram"`  
+    Output: `true`
+  - **Problem Link:** [LeetCode - Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+#
