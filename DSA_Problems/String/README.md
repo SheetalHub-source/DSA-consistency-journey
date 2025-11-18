@@ -33,4 +33,13 @@
     Input: `s = "anagram", t = "nagaram"`  
     Output: `true`
   - **Problem Link:** [LeetCode - Valid Anagram](https://leetcode.com/problems/valid-anagram/)
-#
+## 4️⃣ Implement strStr()
+- **Idea:**  
+  Use a sliding window approach to check each substring of `haystack` that matches the length of `needle`. Compare characters one by one.
+  - **Time Complexity:** O(n*m) (where n is length of haystack and m is length of needle)
+  - **Space Complexity:** O(1)
+  - **Best Use:** Find the first occurrence of a substring within another string.
+    - **Example:**  
+      Input: `haystack = "hello", needle = "ll"`  
+      Output: `2`
+    - **Problem Link:** [LeetCode - Implement strStr()](https://leetcode.com/problems/implement-strstr/)
