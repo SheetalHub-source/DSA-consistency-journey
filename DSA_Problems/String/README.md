@@ -43,3 +43,13 @@
       Input: `haystack = "hello", needle = "ll"`  
       Output: `2`
     - **Problem Link:** [LeetCode - Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+  ## 5️⃣ Count and Say
+- **Idea:**  
+  Build the sequence iteratively by reading the previous term and counting consecutive digits.
+  - **Time Complexity:** O(n * 2^n) (due to string construction)
+  - **Space Complexity:** O(2^n) (for storing the sequence)
+  - **Best Use:** Generate the nth term of the count-and-say sequence.
+    - **Example:**  
+      Input: `n = 4`  
+      Output: `"1211"`
+    - **Problem Link:** [LeetCode - Count and Say](https://leetcode.com/problems/count-and-say/)
