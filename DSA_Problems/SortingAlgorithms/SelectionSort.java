@@ -1,3 +1,5 @@
+package SortingAlgorithms;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -43,9 +45,26 @@ class SelectionSort {
         System.out.println("Before Sorting, Array looks like this:");
         Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
         System.out.println();
+        RevisedSelectionSort(arr);
 
-        SelectionSort_For_Array(arr);
+//        SelectionSort_For_Array(arr);
 
+//        System.out.println("Sorted Array looks like this:");
+//        Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
+    }
+    public static void RevisedSelectionSort(int[] arr){
+        int n = arr.length;
+        for(int i =0;i<n-1;i++){
+            int minIdx = i;
+            for(int j=i;j<n;j++){
+                if(arr[j]<arr[minIdx]){
+                    minIdx = j;
+                }
+            }
+            int x=arr[minIdx];
+            arr[minIdx]=arr[i];
+            arr[i]=x;
+        }
         System.out.println("Sorted Array looks like this:");
         Arrays.stream(arr).forEach(x -> System.out.print(x + " "));
     }

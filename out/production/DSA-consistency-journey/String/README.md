@@ -53,3 +53,13 @@
       Input: `n = 4`  
       Output: `"1211"`
     - **Problem Link:** [LeetCode - Count and Say](https://leetcode.com/problems/count-and-say/)
+    ## 6️⃣ Longest Common Prefix
+- **Idea:**  
+  Compare characters of each string at the same index until a mismatch is found.
+  - **Time Complexity:** O(S) (where S is the sum of all characters in the strings)
+  - **Space Complexity:** O(1)
+  - **Best Use:** Find the longest common prefix among a list of strings.
+    - **Example:**  
+    -  Input: `strs = ["flower","flow","flight"]`  
+      Output: `"fl"`
+    - **Problem Link:** [LeetCode - Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
