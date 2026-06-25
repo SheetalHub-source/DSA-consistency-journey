@@ -4,8 +4,8 @@ public class Patterns {
     private static char letter;
 
     public static void main(String[] args) {
-        int n = 5;
-        printPalindromicLetterPyramid(n);
+        int n = 10;
+        printSquareNumberPattern(n);
     }
 
     private static void printInvertedHalfPyramid(int n) {
@@ -43,6 +43,7 @@ public class Patterns {
 
         }
     }
+
     private static void printInvertedFullPyramidPattern(int n) {
         int a = 1, b = 2 * (n - 1) + 1;
         for (int i = 1; i <= n; i++) {
@@ -60,7 +61,8 @@ public class Patterns {
 
         }
     }
-    private static void printDiamondPattern(int n){
+
+    private static void printDiamondPattern(int n) {
         printFullPyramidPattern(n);
         int a = 2, b = 2 * (n - 1);
         for (int i = 1; i <= n; i++) {
@@ -78,80 +80,88 @@ public class Patterns {
 
         }
     }
-    private static  void printRightHalfDiamond(int n){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
+
+    private static void printRightHalfDiamond(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-        for(int i=n-1;i>=1;i--){
-            for(int j=1;j<=i;j++){
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
     }
-    private static  void printZeroOneTrianglePattern(int n){
+
+    private static void printZeroOneTrianglePattern(int n) {
         int binary = 1;
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-                System.out.print(binary+" ");
-                binary= binary==0?1:0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(binary + " ");
+                binary = binary == 0 ? 1 : 0;
             }
             System.out.println();
         }
     }
-    private static void printNumberCrownPattern(int n){
-        for(int i=1;i<=n;i++){
-            for(int j =1;j<=n;j++){
-                if(j<=i){
+
+    private static void printNumberCrownPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (j <= i) {
                     System.out.print(j);
-                }
-                else{
+                } else {
                     System.out.print(" ");
                 }
             }
-            for(int j =n;j>=1;j--){
-                if(j<=i){
+            for (int j = n; j >= 1; j--) {
+                if (j <= i) {
                     System.out.print(j);
-                }
-                else{
+                } else {
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
     }
-    private static void printLetterHalfPyramid(int n){
-       char character = 'A';
-        for(int i=1;i<=n;i++){
-            for(int j=0;j<i;j++){
+
+    private static void printLetterHalfPyramid(int n) {
+        char character = 'A';
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
                 char letter = (char) (character + j);
                 System.out.print(letter);
             }
             System.out.println();
-    }}
-    private static void printInvertedLetterHalfPyramid(int n){
+        }
+    }
+
+    private static void printInvertedLetterHalfPyramid(int n) {
         char character = 'A';
-        for(int i=n;i>=1;i--){
-            for(int j=0;j<i;j++){
+        for (int i = n; i >= 1; i--) {
+            for (int j = 0; j < i; j++) {
                 char letter = (char) (character + j);
                 System.out.print(letter);
             }
             System.out.println();
-        }}
-    private static void printRepeatingLetterHalfPyramid(int n){
+        }
+    }
+
+    private static void printRepeatingLetterHalfPyramid(int n) {
         char character = 'A';
-        for(int i=1;i<=n;i++){
-            for(int j=0;j<i;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
 //                char letter = (char) (character + j);
 //                System.out.print(letter);
                 System.out.print(character);
             }
             character++;
             System.out.println();
-        }}
+        }
+    }
+
     private static void printPalindromicLetterPyramid(int n) {
 //        char character = 'A';
 //        for(int i=1;i<=n;i++){
@@ -182,6 +192,112 @@ public class Patterns {
         }
     }
 
+    private static void printDescendingLetterTriangle(int n) {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = i; j < n; j++) {
+                char letter = (char) ('A' + j);
+                System.out.print(letter);
+            }
+            System.out.println();
+        }
     }
+
+    private static void printHollowDiamondPattern(int n) {
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < (2 * n - 2 * i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < (2 * n - 2 * i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+
+    }
+
+    private static void printHollowButterflyPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < (2 * n - 2 * i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < (2 * n - 2 * i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
+
+    private static void printHollowSquarePattern(int n) {
+        for (int i = 0; i < n; i++) {
+            if (i == 0 || i == n - 1) {
+                for (int j = 0; j < n; j++) {
+                    System.out.print("*");
+                }
+            } else {
+                System.out.print("*");
+                for (int j = 1; j < n - 1; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print("*");
+
+            }
+            System.out.println();
+        }
+
+    }
+
+    private static void printSquareNumberPattern(int n) {
+        int size = 2 * n - 1;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+
+                int minDistance = Math.min(
+                        Math.min(i, j),
+                        Math.min(size - 1 - i, size - 1 - j)
+                );
+
+                System.out.print((n - minDistance) + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+}
 
 
