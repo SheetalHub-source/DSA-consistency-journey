@@ -1,3 +1,5 @@
+package SortingAlgorithms;
+
 import java.util.Arrays;
 
 public class InsertionSort{
@@ -27,7 +29,7 @@ public class InsertionSort{
     Arrays.stream(intArray).forEach(x->System.out.print(x+" "));
 
     String stringArr[]=createArray("Karan","Sonam","Sheetal","Raj","Umang");
-    System.out.println("Before Sorting array looks like...");
+    System.out.println("\nBefore Sorting array looks like...");
     Arrays.stream(stringArr).forEach(x->System.out.print(x+" "));
     insertionSort_Array(stringArr);
     System.out.println("\nAfter Sorting array looks like");
